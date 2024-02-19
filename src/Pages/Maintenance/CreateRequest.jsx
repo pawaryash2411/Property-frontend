@@ -26,7 +26,7 @@ let CreateRequest = ()=>{
                         <div className="col-md-8 offset-md-2 ">
                             <div className="my-3">
                             <label>Address</label>
-                                <textarea name='address' onChange={handleChange} className={"form-control " + (errors.address && touched.address ? 'is-invalid' : '')}></textarea>
+                                <textarea cols="1" rows="1" charswidth="23" name='address' onChange={handleChange} className={"form-control " + (errors.address && touched.address ? 'is-invalid' : '')}></textarea>
                                 {
                                     errors.address && touched.address ? <small className='text-danger'>{errors.address}</small> : ''
                                 }
@@ -37,8 +37,8 @@ let CreateRequest = ()=>{
                                 {
                                     errors.unit && touched.unit ? <small className='text-danger'>{errors.unit}</small> : ''
                                 }
-                        </div>
-                            <button type='submit' className="btn btn-info" >Continue</button>
+                        </div>    
+                            <button type='submit' className="btn btn-info btn-lg float-end mt-5" ><span className='ps-5 pe-5'>Continue</span></button>
                         </div>   
                         </form> 
                     </div>
