@@ -44,7 +44,7 @@ export function SideBar() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="h-5 w-5 ml-2 "
+                className="h-5 w-5 ml-2"
               >
                 <path
                   strokeLinecap="round"
