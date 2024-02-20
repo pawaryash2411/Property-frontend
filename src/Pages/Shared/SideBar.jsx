@@ -36,7 +36,7 @@ export function SideBar() {
             />
           }
         >
-          <ListItem className=" hover:bg-cyan-50 py-2 font-semibold">
+          <ListItem className=" hover:bg-cyan-50 py-2 font-semibold flex gap-2">
             <ListItemPrefix>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
