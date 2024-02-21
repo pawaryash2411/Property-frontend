@@ -66,8 +66,9 @@ function App() {
 
       {/* done */}
       {/* <Viewnewproperty /> */}
+
     </>
   );
-}
+};
 
 export default App;

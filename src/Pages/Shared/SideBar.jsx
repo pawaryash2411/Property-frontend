@@ -63,7 +63,10 @@ export function SideBar() {
           <AccordionBody className="py-1">
             <List className="p-0">
               <ListItem className="hover:text-cyan-500 py-2 font-semibold">
-                <Link to={"viewnewproperty"} className="link-underline link-underline-opacity-0 text-dark" >veiw all property</Link>
+                <ListItemPrefix>
+                  <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                </ListItemPrefix>
+                Analytics
               </ListItem>
               <ListItem className="hover:text-cyan-500 py-2 font-semibold">
                 <Link to={"addproperty"} className="link-underline link-underline-opacity-0 text-dark" >Add Property  </Link>
