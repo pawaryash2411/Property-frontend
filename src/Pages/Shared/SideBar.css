@@ -5,6 +5,14 @@
     margin-left: 0px
 }
 
+.sidebar-open {
+    transition: max-width 0.3s ease-in-out;
+}
+
+.sidebar-closed {
+    transition: max-width 0.3s ease-in-out;
+}
+
 @media screen and (max-width:1024px) {
     .page-wrapper {
         margin-left: 0
@@ -453,7 +461,7 @@ h6 {
     background: none;
 }
 
-.header .search-form button i  {}
+.header .search-form button i {}
 
 /*--------------------------------------------------------------
     # Header Nav
@@ -474,7 +482,7 @@ h6 {
     position: relative;
 }
 
-.header-nav .nav-profile  {}
+.header-nav .nav-profile {}
 
 .header-nav .nav-profile img {
     max-height: 36px;
@@ -681,16 +689,18 @@ h6 {
     margin: 0;
     list-style: none;
 }
+
 #sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
     display: block;
     max-height: 15em;
     width: 100%;
     opacity: 1;
 }
+
 #sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
     border: solid;
     border-width: 0 .075rem .075rem 0;
-    content : "";
+    content: "";
     display: inline-block;
     padding: 2px;
     position: absolute;
@@ -699,6 +709,7 @@ h6 {
     transform: rotate(-135deg);
     transition: all .2s ease-out;
 }
+
 #sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
     transform: rotate(45deg);
     transition: all .2s ease-out;
