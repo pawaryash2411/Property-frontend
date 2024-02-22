@@ -35,9 +35,8 @@ export function SideBar() {
   return (
     <>
       <Card
-        className={`bg-white h-[calc(100vh-2rem)] w-full p-2 shadow-md shadow-blue-gray-900/5 border-r-2 border-gray-200 ease-in-out duration-150 transition-max-w ${
-          openBar ? "max-w-[15rem] " : "max-w-[2rem]"
-        }`}
+        className={`bg-white h-[calc(100vh-2rem)] w-full p-2 shadow-md shadow-blue-gray-900/5 border-r-2 border-gray-200 ease-in-out duration-150 transition-max-w ${openBar ? "max-w-[15rem] " : "max-w-[2rem]"
+          }`}
       >
         <button onClick={handleToggleSidebar}>
           {openBar ? (
@@ -67,9 +66,8 @@ export function SideBar() {
             icon={
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`mx-auto h-4 w-4 transition-transform ${
-                  open === 1 ? "rotate-180" : ""
-                }`}
+                className={`mx-auto h-4 w-4 transition-transform ${open === 1 ? "rotate-180" : ""
+                  }`}
               />
             }
           >
@@ -90,19 +88,16 @@ export function SideBar() {
             <AccordionBody className="py-1">
               <List className="p-0">
                 <ListItem className="hover:text-cyan-500 py-2 font-semibold">
-                  <ListItemPrefix>
-                    <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
-                  </ListItemPrefix>
-                  Analytics
-                </ListItem>
-                <ListItem className="hover:text-cyan-500 py-2 font-semibold">
-                  <Link
-                    to={"addproperty"}
-                    className="link-underline link-underline-opacity-0 text-dark"
-                  >
-                    Add Property{" "}
+                  <Link to={"Property"} className="link-underline link-underline-opacity-0 text-dark">
+                    View All Property
                   </Link>
                 </ListItem>
+                <ListItem className="hover:text-cyan-500 py-2 font-semibold">
+                  <Link to={"addproperty"} className="link-underline link-underline-opacity-0 text-dark"> Add Property{" "} </Link>
+                </ListItem>
+                {/* <ListItem className="hover:text-cyan-500 py-2 font-semibold">
+                  View All Property
+                </ListItem> */}
               </List>
             </AccordionBody>
           </Accordion>
@@ -114,9 +109,8 @@ export function SideBar() {
             icon={
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`mx-auto h-4 w-4 transition-transform ${
-                  open === 2 ? "rotate-180" : ""
-                }`}
+                className={`mx-auto h-4 w-4 transition-transform ${open === 2 ? "rotate-180" : ""
+                  }`}
               />
             }
           >
@@ -181,9 +175,8 @@ export function SideBar() {
             icon={
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`mx-auto h-4 w-4 transition-transform ${
-                  open === 2 ? "rotate-180" : ""
-                }`}
+                className={`mx-auto h-4 w-4 transition-transform ${open === 2 ? "rotate-180" : ""
+                  }`}
               />
             }
           >
@@ -222,9 +215,12 @@ export function SideBar() {
                   </Link>
                 </ListItem>
                 <ListItem className="hover:text-cyan-500 py-2 font-semibold">
-                  For renter
+                  <Link to={"viewchange"} className="link-underline link-underline-opacity-0 text-dark" > Add Late fees rules </Link>
                 </ListItem>
                 <ListItem className="hover:text-cyan-500 py-2 font-semibold">
+                  <Link to={"viewrentroll"} className="link-underline link-underline-opacity-0 text-dark" > View Rent Roll </Link>
+                </ListItem>
+                {/* <ListItem className="hover:text-cyan-500 py-2 font-semibold">
                   <Link
                     to={"maintenance"}
                     className="link-underline link-underline-opacity-0 text-dark"
@@ -232,7 +228,7 @@ export function SideBar() {
                     {" "}
                     Maintenance{" "}
                   </Link>
-                </ListItem>
+                </ListItem> */}
               </List>
             </AccordionBody>
           </Accordion>
@@ -244,9 +240,8 @@ export function SideBar() {
             icon={
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`mx-auto h-4 w-4 transition-transform ${
-                  open === 2 ? "rotate-180" : ""
-                }`}
+                className={`mx-auto h-4 w-4 transition-transform ${open === 2 ? "rotate-180" : ""
+                  }`}
               />
             }
           >
@@ -268,20 +263,16 @@ export function SideBar() {
               <List className="p-0">
                 <ListItem className="hover:text-cyan-500 py-2 font-semibold">
                   <Link
-                    to={""}
+                    to={"Viewallrenters"}
                     className="link-underline link-underline-opacity-0 text-dark"
-                  >
-                    {" "}
-                    Create Request{" "}
+                  >  Create Request
                   </Link>
                 </ListItem>
                 <ListItem className="hover:text-cyan-500 py-2 font-semibold">
                   <Link
-                    to={""}
-                    className="link-underline link-underline-opacity-0 text-dark"
-                  >
-                    {" "}
-                    View all request{" "}
+                    to={"Viewallrenters"}
+                    className="link-underline link-underline-opacity-0 text-dark">
+                    View all request
                   </Link>
                 </ListItem>
               </List>
@@ -295,9 +286,8 @@ export function SideBar() {
             icon={
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`mx-auto h-4 w-4 transition-transform ${
-                  open === 2 ? "rotate-180" : ""
-                }`}
+                className={`mx-auto h-4 w-4 transition-transform ${open === 2 ? "rotate-180" : ""
+                  }`}
               />
             }
           >
@@ -340,12 +330,67 @@ export function SideBar() {
           </Accordion>
           {/* Maintenance section end   */}
 
-          {/* <ListItem className=" hover:bg-cyan-50 py-2 font-semibold">
-          <ListItemPrefix>
-            <UserCircleIcon className="h-5 w-5 ml-2 " />
-          </ListItemPrefix>
-          Settings
-        </ListItem>  */}
+
+
+
+          {/* Task section start  */}
+          <Accordion
+            open={open === 6}
+            icon={
+              <ChevronDownIcon
+                strokeWidth={2.5}
+                className={`mx-auto h-4 w-4 transition-transform ${open === 2 ? "rotate-180" : ""
+                  }`}
+              />
+            }
+          >
+            <ListItem className="hover:bg-cyan-50 py-1 " selected={open === 2}>
+              <AccordionHeader
+                onClick={() => handleOpen(6)}
+                className="border-b-0 p-2 flex items-center justify-start gap-3"
+              >
+                <div>
+                  <PresentationChartBarIcon className="h-5 w-5" />
+                </div>
+                <Link className="link-underline link-underline-opacity-0 text-dark">
+                  {" "}
+                  Task {" "}
+                </Link>
+              </AccordionHeader>
+            </ListItem>
+            <AccordionBody className="py-1">
+              <List className="p-0">
+                <ListItem className="hover:text-cyan-500 py-2 font-semibold">
+                  <Link
+                    to={"task"}
+                    className="link-underline link-underline-opacity-0 text-dark"
+                  >
+                    Add Task
+                  </Link>
+                </ListItem>
+                <ListItem className="hover:text-cyan-500 py-2 font-semibold">
+                  <Link
+                    to={"viewtask"}
+                    className="link-underline link-underline-opacity-0 text-dark"
+                  >
+                    View all Tasks
+                  </Link>
+                </ListItem>
+              </List>
+            </AccordionBody>
+          </Accordion>
+          {/* Task section end   */}
+
+
+
+          <ListItem className=" hover:bg-cyan-50 py-2 font-semibold">
+            <ListItemPrefix>
+              <UserCircleIcon className="h-5 w-5 ml-2 " />
+            </ListItemPrefix>
+            <Link to={"addbox"}>
+              AddBox
+            </Link>
+          </ListItem>
         </List>
       </Card>
     </>

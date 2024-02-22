@@ -1,5 +1,4 @@
 import React from "react";
-import "./rent.css";
 const Rent = () => {
   return (
     <>
@@ -9,7 +8,7 @@ const Rent = () => {
           <div className="col-md-3 mb-2">
             <div className="bg-info py-2 rounded  text-center text-light  shadow  ">
               <h5 className="p-0 m-0">  $13,125.00</h5>
-              <p className="p-0 m-0"style={{ fontSize: "14px" }}>  7 Due in next 30 days </p>
+              <p className="p-0 m-0" style={{ fontSize: "14px" }}>  7 Due in next 30 days </p>
             </div>
           </div>
           <div className="col-md-3 mb-2">

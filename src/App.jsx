@@ -2,18 +2,20 @@ import "./App.css";
 import AllRoutes from "./routes/Routes";
 import SideBar from "./Pages/Shared/SideBar";
 import Navbar from "./Components/Navbar";
-import Addpage from "./Pages/New folder/Addpage";
+import Addpage from "./Pages/Reports/Rent/Addpage";
 import Rent from "./Pages/Reports/Rent/Rent";
 import Addproperty from "./Pages/Reports/Property/Addproperty";
 import Property from "./Pages/Reports/Property/Property";
 import Maintenance from "./Pages/Reports/Maintenance/Maintenance";
 import Renters from "./Pages/Reports/Property/Renters";
-import Deposit from "./Pages/New folder/Components/Deposit";
-// import Rent from "./Pages/Reports/Rent/Rent";
-// import CreateRequest from "./Pages/Maintenance/CreateRequest";
-// import ViewAllRenters from "./Pages/Renters/Viewallrenters";
-// import Viewnewproperty from "./Pages/Property/Viewnewproperty";
-// import AddBox from "";
+import Deposit from "./Pages/Reports/Rent/Deposit";
+import ViewChange from "./Pages/Reports/Rent/ViewChange";
+import AddBox from "./Pages/Memberpeak/AddBox";
+import ViewAllRenters from "./Pages/Renters/ViewAllRenters";
+import AddRenter from "./Pages/Renters/AddRenter";
+import Task from "./Pages/Tasks/Task";
+import ViewRentRoll from "./Pages/Reports/Rent/ViewRentRoll";
+
 function App() {
   return (
     <>
@@ -26,14 +28,21 @@ function App() {
       </div>
 
 
-      {/* <Deposit /> */}
-      {/* <Renters /> */}
-      {/* <Maintenance/> */}
-      {/* <Addpage /> */}
-      {/* <Rent /> */}
-      {/* <Addproperty /> */}
-      {/* <Property /> */}
+      {/* <AddRenter/> */}
+      {/* <Task/> */}
+      {/* <ViewRentRoll /> */}
+      {/* <ViewAllRenters/> */}
 
+
+      {/* <Deposit />
+      <Renters />
+      <Maintenance/>
+      <Addpage />
+      <Rent />
+      <Addproperty />
+      <Property /> */}
+      {/* <ViewChange /> */}
+      {/* <AddBox /> */}
       {/* <Rent /> */}
       {/* 1700 */}
       {/* <CreateRequest /> */}
