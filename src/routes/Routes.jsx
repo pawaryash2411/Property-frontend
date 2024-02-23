@@ -1,7 +1,5 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import CreateRequest from "../Pages/Maintenance/CreateRequest";
-import ViewAllRenters from "../Pages/Renters/ViewAllRenters";
 import Renters from "../Pages/Reports/Property/Renters";
 import Maintenance from "../Pages/Reports/Maintenance/Maintenance";
 import Rent from "../Pages/Reports/Rent/Rent";
@@ -17,6 +15,8 @@ import Addpage from "../Pages/Reports/Rent/Addpage";
 import Task from "../Pages/Tasks/Task";
 import ViewTask from "../Pages/Tasks/ViewTask";
 import ViewRentRoll from "../Pages/Reports/Rent/ViewRentRoll";
+import ViewAllRenters from "../Pages/Renters/ViewAllRenters";
+
 let AllRoutes = () => {
   return (
     <>
@@ -26,15 +26,10 @@ let AllRoutes = () => {
         <Route path="/view-all-renters" element={<ViewAllRenters />} />
         <Route path="/maintenance" element={<Maintenance />} />
 
-
         {/* Route property start*/}
         <Route path="/viewnewproperty" element={<Viewnewproperty />} />
         <Route path="/renters" element={<Renters />} />
-        <Route path="/Viewallrenters" element={<ViewAllRenters />} />
 
-        {/* Route property End */}
-
-        {/*  rent  Route start */}
         <Route path="/rent" element={<Rent />} />
         <Route path="/deposit" element={<Deposit />} />
         <Route path="/addproperty" element={<Addproperty />} />
@@ -53,12 +48,10 @@ let AllRoutes = () => {
 
         {/* member peck end  */}
 
-
         {/* task section start */}
         <Route path="/task" element={<Task />} />
         <Route path="/viewtask" element={<ViewTask />} />
         {/* task section end */}
-
       </Routes>
     </>
   );
