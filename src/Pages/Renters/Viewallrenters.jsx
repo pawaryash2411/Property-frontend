@@ -69,7 +69,7 @@ const ViewAllRenters = () => {
       <div className="container-fluid ">
         <div className="row       ">
           <div className="col-md-2 mb-2">
-            <div className=" py-2 rounded  text-center  shadow  text-light "   style={{background:"#24526c"}} >
+            <div className=" py-2 rounded  text-center bg-info   shadow  text-light "    >
               <h5 className="p-0 m-0">Current</h5>
               <p className="p-0 m-0">
                 {" "}
@@ -78,7 +78,7 @@ const ViewAllRenters = () => {
             </div>
           </div>
           <div className="col-md-2 mb-2 ">
-            <div className=" bg-opacity-50 py-2 rounded text-center shadow text-light "  style={{background:"#8F9489"}}>
+            <div className="bg-secondary bg-opacity-50 py-2 rounded text-center  shadow text-light "  >
               <h5 className="p-0 m-0"> Moving In </h5>
               <p className="p-0 m-0">0 Lease Starting </p>
             </div>
@@ -176,13 +176,13 @@ const ViewAllRenters = () => {
                     <td>Otto</td>
                     <td>@mdo</td>
                     <td>
-                      <button className="rounded text-light  border-0  px-2 py-1" style={{backgroundColor: "#aab646"}}>
+                      <button className="rounded text-light bg-info border-0  px-2 py-1" >
                         <i className="fa-solid fa-eye"></i>
                       </button>
-                      <button className="rounded ms-2 text-light  border-0 px-2 py-1" style={{backgroundColor: "#aab646"}}>
+                      <button className="rounded ms-2 text-light bg-info border-0 px-2 py-1" >
                         <i className="fa-solid fa-pen"></i>
                       </button>
-                      <button className="rounded ms-2 text-light   border-0 px-2 py-1" style={{backgroundColor: "#aab646"}}>
+                      <button className="rounded ms-2 text-light bg-info  border-0 px-2 py-1" >
                         <i className="fa-solid fa-trash"   ></i>
                       </button>
                     </td>
@@ -195,13 +195,13 @@ const ViewAllRenters = () => {
                     <td>Otto</td>
                     <td>@mdo</td>
                     <td>
-                      <button className="rounded text-light   border-0  px-2 py-1" style={{backgroundColor: "#aab646"}}>
+                      <button className="rounded text-light bg-info  border-0  px-2 py-1" >
                         <i className="fa-solid fa-eye"></i>
                       </button>
-                      <button className="rounded ms-2 text-light  border-0 px-2 py-1" style={{backgroundColor: "#aab646"}}>
+                      <button className="rounded ms-2 text-light bg-info border-0 px-2 py-1">
                         <i className="fa-solid fa-pen"></i>
                       </button>
-                      <button className="rounded ms-2 text-light    border-0 px-2 py-1" style={{backgroundColor: "#aab646"}}>
+                      <button className="rounded ms-2 text-light  bg-info  border-0 px-2 py-1" >
                         <i className="fa-solid fa-trash"   ></i>
                       </button>
                     </td>
@@ -214,13 +214,13 @@ const ViewAllRenters = () => {
                     <td>Otto</td>
                     <td>@mdo</td>
                     <td>
-                      <button className="rounded text-light  border-0  px-2 py-1" style={{backgroundColor: "#aab646"}}>
+                      <button className="rounded text-light  border-0  bg-info px-2 py-1" >
                         <i className="fa-solid fa-eye"></i>
                       </button>
-                      <button className="rounded ms-2 text-light  border-0 px-2 py-1" style={{backgroundColor: "#aab646"}}>
+                      <button className="rounded ms-2 text-light  border-0 bg-info px-2 py-1" >
                         <i className="fa-solid fa-pen"></i>
                       </button>
-                      <button className="rounded ms-2 text-light   border-0 px-2 py-1" style={{backgroundColor: "#aab646"}}>
+                      <button className="rounded ms-2 text-light   border-0 bg-info px-2 py-1" >
                         <i className="fa-solid fa-trash"   ></i>
                       </button>
                     </td>

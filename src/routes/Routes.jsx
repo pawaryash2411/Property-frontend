@@ -37,7 +37,6 @@ let AllRoutes = () => {
         {/*  rent  Route start */}
         <Route path="/rent" element={<Rent />} />
         <Route path="/deposit" element={<Deposit />} />
-
         <Route path="/addproperty" element={<Addproperty />} />
         <Route path="/property" element={<Property />} />
         <Route path="/viewchange" element={<ViewChange />} />
@@ -58,10 +57,7 @@ let AllRoutes = () => {
         {/* task section start */}
         <Route path="/task" element={<Task />} />
         <Route path="/viewtask" element={<ViewTask />} />
-
-
         {/* task section end */}
-
 
       </Routes>
     </>

@@ -35,8 +35,6 @@ const ViewTask = () => {
                 </div>
             </div>
 
-
-
             <div className="container-fluid my-3 ">
                 <div className="row  ">
                     <div className="col-md-4 my-2 ">
@@ -57,71 +55,67 @@ const ViewTask = () => {
                 </div>
             </div>
 
+            <div className="container-fluid ">
+                <div className="row ">
+                    {/* <hr /> */}
+                    <div className="col-md-12">
+                        <div className="table-responsive  ">
+                            <table className="table">
+                                <thead>
+                                    <tr style={{ whiteSpace: "nowrap" }}>
+                                        <th className="text-secondary  " scope="col">
+                                            <div className='d-flex'>
+                                                Task
+                                                <img
+                                                    className="mx-1"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal"
+                                                    src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </th>
+                                        <th className="text-secondary " scope="col">
+                                            <div className='d-flex'>
 
-            <section>
-                <div className="container-fluid ">
-                    <div className="row ">
-                        {/* <hr /> */}
-                        <div className="col-md-12">
-                            <div className="table-responsive  ">
-                                <table className="table">
-                                    <thead>
-                                        <tr style={{ whiteSpace: "nowrap" }}>
-                                            <th className="text-secondary  " scope="col">
-                                                <div className='d-flex'>
-                                                    Task
-                                                    <img
-                                                        className="mx-1"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal"
-                                                        src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
-                                                        alt=""
-                                                    />
-                                                </div>
-                                            </th>
-                                            <th className="text-secondary " scope="col">
-                                                <div className='d-flex'>
+                                                Priority
 
-                                                    Priority
+                                                <img
+                                                    className="mx-1"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal"
+                                                    src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </th>
 
-                                                    <img
-                                                        className="mx-1"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal"
-                                                        src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
-                                                        alt=""
-                                                    />
-                                                </div>
-                                            </th>
-
-                                            <th className="text-secondary" scope="col">
-                                                <div className='d-flex'>
-                                                    Date
-                                                    <img
-                                                        className="mx-1"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal"
-                                                        src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
-                                                        alt=""
-                                                    />
-                                                </div>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td> 1 Main Street 2B</td>
-                                            <td>Check Gutters at 1 Main St Main Street 2B  </td>
-                                            <td>20/1/2023</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                                        <th className="text-secondary" scope="col">
+                                            <div className='d-flex'>
+                                                Date
+                                                <img
+                                                    className="mx-1"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal"
+                                                    src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> 1 Main Street 2B</td>
+                                        <td>Check Gutters at 1 Main St Main Street 2B  </td>
+                                        <td>20/1/2023</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-            </section>
-
+            </div>
 
         </>
     )

@@ -47,9 +47,9 @@ export function SideBar() {
         </button>
         <List style={{ display: openBar ? "block" : "none" }}>
           {/* dashboard Section start */}
-          <ListItem className=" hover:bg-cyan-50 py-2 font-semibold flex gap-2">
+          <ListItem className=" hover:bg-cyan-50 ms-2 py-2 font-semibold flex gap-2">
             <ListItemPrefix>
-              <i className="fa-solid fa-gauge fs-5"></i>
+              <i class="fa-solid fa-boxes-stacked fs-5" style={{ color: "#74C0FC" }}></i>
             </ListItemPrefix>
             <Link
               className="link-underline link-underline-opacity-0 text-black"
@@ -77,7 +77,7 @@ export function SideBar() {
                 className="border-b-0 p-2 flex items-center justify-start gap-2"
               >
                 <div>
-                  <PresentationChartBarIcon className="h-5 w-5" />
+                  <i class="fa-solid fa-house-building" style={{ color: "#74C0FC" }}></i>
                 </div>
                 <Link className="link-underline link-underline-opacity-0 text-dark">
                   {" "}
@@ -120,7 +120,8 @@ export function SideBar() {
                 className="border-b-0 p-2 flex items-center justify-start gap-3"
               >
                 <div>
-                  <PresentationChartBarIcon className="h-5 w-5" />
+                  <i class="fa-sharp fa-regular fa-file-chart-pie fs-5" style={{ color: "#74C0FC" }}></i>
+                  {/* <PresentationChartBarIcon className="h-5 w-5" /> */}
                 </div>
                 <Link className="link-underline link-underline-opacity-0 text-dark">
                   {" "}
@@ -186,7 +187,8 @@ export function SideBar() {
                 className="border-b-0 p-2 flex items-center justify-start gap-3"
               >
                 <div>
-                  <PresentationChartBarIcon className="h-5 w-5" />
+                  <i class="fa-regular fa-briefcase fs-5" style={{ color: "#74C0FC" }}></i>
+                  {/* <PresentationChartBarIcon className="h-5 w-5" /> */}
                 </div>
                 <Link className="link-underline link-underline-opacity-0 text-dark">
                   {" "}
@@ -251,7 +253,8 @@ export function SideBar() {
                 className="border-b-0 p-2 flex items-center justify-start gap-3"
               >
                 <div>
-                  <PresentationChartBarIcon className="h-5 w-5" />
+                <i class="fa-regular fa-user fs-5" style={{color: "#74C0FC"}}></i>
+                  {/* <PresentationChartBarIcon className="h-5 w-5" /> */}
                 </div>
                 <Link className="link-underline link-underline-opacity-0 text-dark">
                   {" "}
@@ -297,7 +300,8 @@ export function SideBar() {
                 className="border-b-0 p-2 flex items-center justify-start gap-3"
               >
                 <div>
-                  <PresentationChartBarIcon className="h-5 w-5" />
+                <i class="fa-regular fa-plug-circle-check fs-5" style={{color: "#74C0FC"}}></i>
+                  {/* <PresentationChartBarIcon className="h-5 w-5" /> */}
                 </div>
                 <Link className="link-underline link-underline-opacity-0 text-dark">
                   {" "}
@@ -330,9 +334,6 @@ export function SideBar() {
           </Accordion>
           {/* Maintenance section end   */}
 
-
-
-
           {/* Task section start  */}
           <Accordion
             open={open === 6}
@@ -350,7 +351,8 @@ export function SideBar() {
                 className="border-b-0 p-2 flex items-center justify-start gap-3"
               >
                 <div>
-                  <PresentationChartBarIcon className="h-5 w-5" />
+                <i class="fa-regular fa-list-check fs-5" style={{color: "#74C0FC"}}></i>
+                  {/* <PresentationChartBarIcon className="h-5 w-5" /> */}
                 </div>
                 <Link className="link-underline link-underline-opacity-0 text-dark">
                   {" "}
@@ -381,13 +383,12 @@ export function SideBar() {
           </Accordion>
           {/* Task section end   */}
 
-
-
-          <ListItem className=" hover:bg-cyan-50 py-2 font-semibold">
+          <ListItem className=" hover:bg-cyan-50 ms-2 py-2 font-semibold">
             <ListItemPrefix>
-              <UserCircleIcon className="h-5 w-5 ml-2 " />
+            <i class="fa-regular fa-book me-2 fs-5" style={{color: "#74C0FC"}}></i>
+              {/* <UserCircleIcon className="h-5 w-5 ml-2 " /> */}
             </ListItemPrefix>
-            <Link to={"addbox"}>
+            <Link to={"addbox"} className="link-underline link-underline-opacity-0 text-dark">
               AddBox
             </Link>
           </ListItem>

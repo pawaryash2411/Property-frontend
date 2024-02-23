@@ -59,4 +59,4 @@ const AddRenter = () => {
     )
 }
 
-export default AddRenter
+export default AddRenter;

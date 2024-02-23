@@ -5,20 +5,16 @@ const Task = () => {
         <>
             <div className="container">
                 <div className="row ">
-                    <div 
+                    <div
                         className="col-md-6 shadow mx-auto mt-5 rounded-3"
                         style={{ backgroundColor: "rgb(250, 250, 250)" }}
                     >
-                        <h1
-                            className="text-center my-2"
-                            style={{
-                                color: "#414141",
-                                borderBottom: "0 solid #3274ba",
-                                fontWeight: 700,
-                                fontSize: 25
-                            }}
-                        >
-                            Add New Task
+                        <h1 className="text-center my-2" style={{
+                            color: "#414141",
+                            borderBottom: "0 solid #3274ba",
+                            fontWeight: 700,
+                            fontSize: 25
+                        }} > Add New Task
                         </h1>
                         <div className="row">
                             <div className="col-md-6">

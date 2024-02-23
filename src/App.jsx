@@ -15,6 +15,9 @@ import ViewAllRenters from "./Pages/Renters/ViewAllRenters";
 import AddRenter from "./Pages/Renters/AddRenter";
 import Task from "./Pages/Tasks/Task";
 import ViewRentRoll from "./Pages/Reports/Rent/ViewRentRoll";
+import AddChange from "./Pages/New folder/Components/AddChange";
+import Create from "./Pages/New folder/Components/Create";
+import Requset from "./Pages/New folder/Components/Requset";
 
 function App() {
   return (
@@ -27,12 +30,13 @@ function App() {
         </div>
       </div>
 
-
+      <AddChange />
+      <Create />
+      <Requset />
       {/* <AddRenter/> */}
       {/* <Task/> */}
       {/* <ViewRentRoll /> */}
       {/* <ViewAllRenters/> */}
-
 
       {/* <Deposit />
       <Renters />
