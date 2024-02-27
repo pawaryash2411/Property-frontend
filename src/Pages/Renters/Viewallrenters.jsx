@@ -234,5 +234,3 @@ const ViewAllRenters = () => {
     </>
   );
 };
-
-export default ViewAllRenters;

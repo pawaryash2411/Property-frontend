@@ -1,7 +1,5 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import CreateRequest from "../Pages/Maintenance/CreateRequest";
-import ViewAllRenters from "../Pages/Renters/ViewAllRenters";
 import Renters from "../Pages/Reports/Property/Renters";
 import Maintenance from "../Pages/Reports/Maintenance/Maintenance";
 import Rent from "../Pages/Reports/Rent/Rent";
@@ -18,6 +16,8 @@ import Task from "../Pages/Tasks/Task";
 import ViewTask from "../Pages/Tasks/ViewTask";
 import ViewRentRoll from "../Pages/Reports/Rent/ViewRentRoll";
 import Calender from "../Pages/Calender/Calender";
+import ViewAllRenters from "../Pages/Renters/ViewAllRenters";
+
 let AllRoutes = () => {
   return (
     <>
@@ -30,6 +30,7 @@ let AllRoutes = () => {
         <Route path="/renters" element={<Renters />} />
         <Route path="/viewallrenters" element={<ViewAllRenters />} />
 
+        {/* Route property start*/}
         <Route path="/rent" element={<Rent />} />
         <Route path="/deposit" element={<Deposit />} />
         <Route path="/addproperty" element={<Addproperty />} />
@@ -44,6 +45,8 @@ let AllRoutes = () => {
         <Route path="/viewtask" element={<ViewTask />} />
         <Route path="/calender" element={<Calender />} />
 
+
+        {/* member peck end  */}
       </Routes>
     </>
     // viewallrenters
