@@ -17,6 +17,7 @@ import Addpage from "../Pages/Reports/Rent/Addpage";
 import Task from "../Pages/Tasks/Task";
 import ViewTask from "../Pages/Tasks/ViewTask";
 import ViewRentRoll from "../Pages/Reports/Rent/ViewRentRoll";
+import Calender from "../Pages/Calender/Calender";
 let AllRoutes = () => {
   return (
     <>
@@ -25,16 +26,10 @@ let AllRoutes = () => {
 
         <Route path="/view-all-renters" element={<ViewAllRenters />} />
         <Route path="/maintenance" element={<Maintenance />} />
-
-
-        {/* Route property start*/}
         <Route path="/viewnewproperty" element={<Viewnewproperty />} />
         <Route path="/renters" element={<Renters />} />
-        <Route path="/Viewallrenters" element={<ViewAllRenters />} />
+        <Route path="/viewallrenters" element={<ViewAllRenters />} />
 
-        {/* Route property End */}
-
-        {/*  rent  Route start */}
         <Route path="/rent" element={<Rent />} />
         <Route path="/deposit" element={<Deposit />} />
         <Route path="/addproperty" element={<Addproperty />} />
@@ -42,25 +37,16 @@ let AllRoutes = () => {
         <Route path="/viewchange" element={<ViewChange />} />
         <Route path="/addpage" element={<Addpage />} />
         <Route path="/viewrentroll" element={<ViewRentRoll />} />
-        {/*  rent  Route end  */}
-
-        {/* maintenance Route start  */}
         <Route path="/createrequest" element={<CreateRequest />} />
         <Route path="/requset" element={<Requset />} />
-        {/* maintenance Route end   */}
-        {/* member peck start */}
         <Route path="/addbox" element={<AddBox />} />
-
-        {/* member peck end  */}
-
-
-        {/* task section start */}
         <Route path="/task" element={<Task />} />
         <Route path="/viewtask" element={<ViewTask />} />
-        {/* task section end */}
+        <Route path="/calender" element={<Calender />} />
 
       </Routes>
     </>
+    // viewallrenters
   );
 };
 

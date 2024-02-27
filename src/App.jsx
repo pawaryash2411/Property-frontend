@@ -18,6 +18,7 @@ import ViewRentRoll from "./Pages/Reports/Rent/ViewRentRoll";
 import AddChange from "./Pages/New folder/Components/AddChange";
 import Create from "./Pages/New folder/Components/Create";
 import Requset from "./Pages/New folder/Components/Requset";
+import Calender from "./Pages/Calender/Calender";
 
 function App() {
   return (
@@ -29,10 +30,11 @@ function App() {
           <AllRoutes />
         </div>
       </div>
+      {/* <Calender/> */}
 
-      <AddChange />
-      <Create />
-      <Requset />
+      {/* <AddChange /> */}
+      {/* <Create /> */}
+      {/* <Requset /> */}
       {/* <AddRenter/> */}
       {/* <Task/> */}
       {/* <ViewRentRoll /> */}

@@ -46,11 +46,12 @@ const Requset = () => {
           <div className="col-md-8">
             <div className="float-end ">
               <button type="button" className="btn btn-white shadow  me-2 mt-2 ">
-                <i className="fa-sharp fa-solid fa-file me-1 "></i>Export Data
+                <i class="fa-regular fa-file fs-5 me-1" style={{ color: "#74C0FC" }}></i>
+                Export Data
               </button>
               <button type="button" className="btn btn-white shadow  me-2 mt-2 " data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop">
-                <i className="fa-solid fa-ban me-1"></i>Clear All Filters
+                <i className="fa-solid fa-ban fs-5 me-1" style={{ color: "#74C0FC", fontWeight: "500" }}></i>Clear All Filters
               </button>
             </div>
           </div>
@@ -60,7 +61,7 @@ const Requset = () => {
       {/* Maintenance Completed section End  */}
       {/* Table Section start  */}
       <section>
-        <div className="container-fluid ">
+        <div className="container-fluid">
           <div className="row ">
             {/* <hr /> */}
             <div className="col-md-12">
@@ -68,41 +69,41 @@ const Requset = () => {
                 <table className="table">
                   <thead>
                     <tr style={{ whiteSpace: "nowrap" }}>
-                      <th className="text-secondary  " scope="col">
-                        <div className='d-flex'>
+                      <th className="  " scope="col">
+                        <div className=''>
                           Address
-                          <img
+                          {/* <img
                             className="mx-1"
                             data-bs-toggle="modal"
                             data-bs-target="#exampleModal"
                             src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
                             alt=""
-                          />
+                          /> */}
                         </div>
                       </th>
-                      <th className="text-secondary " scope="col">
-                        <div className='d-flex'>
+                      <th className=" " scope="col">
+                        <div className=''>
                           Description
-                          <img
+                          {/* <img
                             className="mx-1"
                             data-bs-toggle="modal"
                             data-bs-target="#exampleModal"
                             src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
                             alt=""
-                          />
+                          /> */}
                         </div>
                       </th>
 
-                      <th className="text-secondary" scope="col">
-                        <div className='d-flex'>
+                      <th className="" scope="col">
+                        <div className=''>
                           Date
-                          <img
+                          {/* <img
                             className="mx-1"
                             data-bs-toggle="modal"
                             data-bs-target="#exampleModal"
                             src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
                             alt=""
-                          />
+                          /> */}
                         </div>
                       </th>
                     </tr>

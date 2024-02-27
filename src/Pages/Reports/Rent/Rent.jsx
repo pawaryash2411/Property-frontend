@@ -43,11 +43,14 @@ const Rent = () => {
             <div className="float-end">
               <button type="button" className="btn    side_btn shadow  ">
                 {" "}
-                <i className="fa-solid fa-file"></i> Export Data{" "}
+                <i class="fa-regular fa-database me-1 fs-5" style={{ color: "#74C0FC" }}></i>
+                Export Data
               </button>
               <button type="button" className="btn ms-2 side_btn shadow">
                 {" "}
-                <i className="fa-solid fa-ban"></i> Clear All Filters
+                <i className="fa-solid fa-ban text-secondaryfs-5 me-1" style={{ color: "#74C0FC" }} />
+                {/* <i class="fa-regular fa-file fs-5 me-1" style={{ color: "#74C0FC" }}></i> */}
+                Clear All Filters
               </button>
             </div>
           </div>
@@ -92,9 +95,9 @@ const Rent = () => {
                       </select>
                     </td>
                     <td>
-                      {" "}
-                      <i className="fa-solid fa-pen-to-square fs-5"></i>{" "}
-                      <i className="fa-solid fa-trash fs-5 ms-1"></i>{" "}
+
+                      <i class="fa-solid fa-pen-to-square fs-5" style={{ color: "#74C0FC" }}></i>
+                      <i class="fa-regular fa-trash ms-2 fs-5" style={{ color: "#74C0FC" }}></i>
                     </td>
                   </tr>
 
@@ -121,8 +124,8 @@ const Rent = () => {
                     </td>
                     <td>
                       {" "}
-                      <i className="fa-solid fa-pen-to-square fs-5"></i>{" "}
-                      <i className="fa-solid fa-trash fs-5 ms-1"></i>{" "}
+                      <i class="fa-solid fa-pen-to-square fs-5" style={{ color: "#74C0FC" }}></i>
+                      <i class="fa-regular fa-trash ms-2 fs-5" style={{ color: "#74C0FC" }}></i>
                     </td>
                   </tr>
 
@@ -149,8 +152,8 @@ const Rent = () => {
                     </td>
                     <td>
                       {" "}
-                      <i className="fa-solid fa-pen-to-square fs-5"></i>{" "}
-                      <i className="fa-solid fa-trash fs-5 ms-1"></i>{" "}
+                      <i class="fa-solid fa-pen-to-square fs-5" style={{ color: "#74C0FC" }}></i>
+                      <i class="fa-regular fa-trash ms-2 fs-5" style={{ color: "#74C0FC" }}></i>
                     </td>
                   </tr>
                 </tbody>

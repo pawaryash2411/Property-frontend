@@ -74,7 +74,7 @@ const Deposit = () => {
         </section>
         {/* card section End*/}
         {/* Charges  section start  */}
-        <section>
+        <section className='my-2'>
           <div className="container">
             <div className="row">
               <div className="allSidesMargin0 col-md-6 pb-3">
@@ -90,17 +90,20 @@ const Deposit = () => {
                     style={{ fontWeight: 400, border: "1px solid #e2e8f0" }}
                     className="btn1 btn shadow bg-transparent text-dark"
                   >
-                    <i className="fa-solid fa-file-export text-secondary" /> Export
+                    <i class="fa-regular fa-database me-1 fs-5" style={{ color: "#74C0FC" }}></i>
+
+                    Export
                     Data
                   </button>
                   <button
                     type="button"
-                    className="btn1 btn shadow bg-transparent text-dark"
+                    className="btn1 btn shadow bg-transparent text-dark ms-2"
                     data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop"
                     style={{ fontWeight: 400, border: "1px solid #e2e8f0" }}
                   >
-                    <i className="fa-solid fa-ban text-secondary" /> Clear Filters
+                    <i className="fa-solid fa-ban text-secondaryfs-5 me-1" style={{ color: "#74C0FC" }} />
+                    Clear Filters
                   </button>
                 </div>
               </div>
@@ -109,97 +112,90 @@ const Deposit = () => {
         </section>
         {/* Charges  section End  */}
         {/* Payment section start  */}
-        <section>
-          <div className="container mt-3 mb-3">
-            <div className="row">
-              <div className="col-md-3 mt-2 mb-2">
-                <div className="card  ">
-                  <div className="d-flex align-items-center  justify-content-center  ">
-                    <div>
-                      <img
-                        src="./img/pro/f591213e-5967-41c1-94a3-445d04217537.jpeg"
-                        className="img-fluid "
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <h1 className="text-center " style={{ fontSize: 15 }}>
-                        $0
-                      </h1>
-                      <h4 className="text-center mt-2" style={{ fontSize: 15 }}>
-                        0 Payments overall
-                      </h4>
-                    </div>
+
+        <div className="container my-3 mb-3">
+          <div className="row">
+            <div className="col-md-3  mb-2">
+              <div className="card  ">
+                <div className="d-flex p-0 py-2 align-items-center  justify-content-center  ">
+                  <div>
+                    <i class="fa-regular fa-money-bill fs-2 me-3" style={{ color: "#74C0FC" }}></i>
+                  </div>
+                  <div>
+                    <h4 className="text-center " >
+                      $0
+                    </h4>
+                    <h4 className="text-center mt-2" style={{ fontSize: 15 }}>
+                      0 Payments overall
+                    </h4>
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 mt-2 mb-2">
-                <div className="card  ">
-                  <div className="d-flex align-items-center  justify-content-center  ">
-                    <div>
-                      <img
-                        src="./img/pro/moblie.jpeg"
-                        className="img-fluid "
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <h1 className="text-center " style={{ fontSize: 15 }}>
-                        $0
-                      </h1>
-                      <h4 className="text-center " style={{ fontSize: 15 }}>
-                        0 Recent (pending) payments
-                      </h4>
-                    </div>
+            </div>
+            <div className="col-md-3 mb-2">
+              <div className="card  ">
+                <div className="d-flex py-2 align-items-center  justify-content-center  ">
+                  <div>
+                    <i class="fa-regular fa-mobile fs-2 me-3" style={{ color: "#74C0FC" }}></i>
+                  </div>
+                  <div>
+                    <h4 className="text-center " >
+                      $0
+                    </h4>
+                    <h4 className="text-center " style={{ fontSize: 15 }}>
+                      0 Recent (pending)
+                    </h4>
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 mt-2 mb-2">
-                <div className="card  ">
-                  <div className="d-flex align-items-center  justify-content-center  ">
-                    <div>
-                      <img src="./img/pro/bank1.jpeg" className="img-fluid " alt="" />
-                    </div>
-                    <div>
-                      <h1 className="text-center " style={{ fontSize: 15 }}>
-                        $0
-                      </h1>
-                      <h4 className="text-center " style={{ fontSize: 15 }}>
-                        0 Deposits initiated
-                      </h4>
-                    </div>
+            </div>
+            <div className="col-md-3  mb-2">
+              <div className="card  ">
+                <div className="d-flex py-2 align-items-center  justify-content-center  ">
+                  <div>
+                    <i class="fa-solid fa-landmark fs-2 me-3" style={{ color: "#74C0FC" }}></i>
+                  </div>
+                  <div>
+                    <h4 className="text-center " >
+                      $0
+                    </h4>
+                    <h4 className="text-center " style={{ fontSize: 15 }}>
+                      0 Deposits initiated
+                    </h4>
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 mt-2 mb-2">
-                <div
-                  className="card border-0 "
-                  style={{ backgroundColor: "#2eaef0" }}
-                >
-                  <div className="d-flex align-items-center  justify-content-center  ">
-                    <div>
-                      <img src="./img/pro/bank2.jpeg" className="img-fluid " alt="" />
-                    </div>
-                    <div>
-                      <h1
-                        className="text-center text-light "
-                        style={{ fontSize: 15 }}
-                      >
-                        $0
-                      </h1>
-                      <h4
-                        className="text-center  text-light"
-                        style={{ fontSize: 15 }}
-                      >
-                        0 Deposits made in last 30 days
-                      </h4>
-                    </div>
+            </div>
+            <div className="col-md-3  mb-2">
+              <div
+                className="card border-0 "
+                style={{ backgroundColor: "#2eaef0" }}
+              >
+                <div className="d-flex py-1 align-items-center  justify-content-center  ">
+                  <div>
+                    <i class="fa-solid fa-landmark-dome  fs-2 ms-2" style={{ color: "white" }}></i>
+
+                  </div>
+                  <div>
+                    <h4
+                      className="text-center text-light "
+                      
+                    >
+                      $0
+                    </h4>
+                    <h4
+                      className="text-center  text-light"
+                      style={{ fontSize: 15 }}
+                    >
+                      0 Deposits made in last 30 days
+                    </h4>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+
         {/* Payment section End  */}
         {/* Table Section start  */}
         <section>
@@ -210,99 +206,115 @@ const Deposit = () => {
                 <table className="table">
                   <thead>
                     <tr style={{ whiteSpace: "nowrap" }}>
-                      <th className="text-secondary" scope="col">
-                        <img
+                      <th className=" " scope="col">
+                        {/* <img
                           className="mx-1"
                           data-bs-toggle="modal"
                           data-bs-target="#exampleModal"
                           src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
                           alt=""
-                        />
+                        /> */}
                         Transfer Amount
                       </th>
-                      <th className="text-secondary" scope="col">
-                        <img
+                      <th className=" " scope="col">
+                        {/* <img
                           className="mx-1"
                           data-bs-toggle="modal"
                           data-bs-target="#exampleModal"
                           src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
                           alt=""
-                        />
+                        /> */}
                         Payment(s) linked
                       </th>
-                      <th className="text-secondary" scope="col">
-                        <img
+                      <th className="" scope="col">
+                        {/* <img
                           className="mx-1"
                           data-bs-toggle="modal"
                           data-bs-target="#exampleModal"
                           src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
                           alt=""
-                        />
+                        /> */}
                         Paid By
                       </th>
-                      <th className="text-secondary" scope="col">
-                        <img
+                      <th className="" scope="col">
+                        {/* <img
                           className="mx-1"
                           data-bs-toggle="modal"
                           data-bs-target="#exampleModal"
                           src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
                           alt=""
-                        />
+                        /> */}
                         Property
                       </th>
-                      <th className="text-secondary" scope="col">
-                        <img
+                      <th className="" scope="col">
+                        {/* <img
                           className="mx-1"
                           data-bs-toggle="modal"
                           data-bs-target="#exampleModal"
                           src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
                           alt=""
-                        />
+                        /> */}
                         Unit
                       </th>
-                      <th className="text-secondary" scope="col">
-                        <img
+                      <th className="" scope="col">
+                        {/* <img
                           className="mx-1"
                           data-bs-toggle="modal"
                           data-bs-target="#exampleModal"
                           src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
                           alt=""
-                        />
+                        /> */}
                         Paid on
                       </th>
-                      <th className="text-secondary" scope="col">
-                        <img
+                      <th className="" scope="col">
+                        {/* <img
                           className="mx-1"
                           data-bs-toggle="modal"
                           data-bs-target="#exampleModal"
                           src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
                           alt=""
-                        />
+                        /> */}
                         Receive by
                       </th>
-                      <th className="text-secondary" scope="col">
-                        <img
+                      <th className="" scope="col">
+                        {/* <img
                           className="mx-1"
                           data-bs-toggle="modal"
                           data-bs-target="#exampleModal"
                           src="https://app.rentredi.com/static/media/greyFilterIcon.addaac64.svg"
                           alt=""
-                        />
+                        /> */}
                         Deposit to
                       </th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody style={{ whiteSpace: "nowrap" }} className="text-center">
                     <tr>
-                      <td />
-                      <td />
-                      <td />
-                      <td />
-                      <td />
-                      <td />
-                      <td />
-                      <td />
+                      <th scope="row"> $1875.00 </th>
+                      <td> 1 main Street </td>
+                      <td> Unit </td>
+                      <td
+                        className=""
+                        style={{ textAlign: "center", width: "200px" }}
+                      >
+                        <select
+                          style={{ width: "200px" }}
+                          className="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Open this select menu</option>
+                          <option value="1"> Send Reminder </option>
+                          <option value="2"> Add Payment Received </option>
+                          <option value="3"> Edit charges Details </option>
+                        </select>
+                      </td>
+                      <td> ------ </td>
+                      <td>10/12/23</td>
+                      <td>10/12/23</td>
+                      <td>10/12/23</td>
                     </tr>
+
+
                   </tbody>
                 </table>
               </div>

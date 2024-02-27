@@ -5,13 +5,11 @@ const Addpage = () => {
     <>
       <div className="container-fluid">
         <div className="container">
-          <div className="row">
-            <div className="my-3">
-              <button type="button" className="btn btn-outline-info float-end  text-secondary" >
-                Save
-              </button>
-            </div>
-            <div className="col-md-2 mx-auto shadow  rounded-3  text-info py-5" style={{ height: "280px" }} >
+          <div className="row mt-5">
+            <div
+              className="col-md-2 col-lg-2 col-sm-2   border-1 border-info text-info py-5"
+              style={{ height: 300 }}
+            >
               <select
                 className="form-select form-select-md mb-3 text-info"
                 aria-label="Large select example"
@@ -31,36 +29,26 @@ const Addpage = () => {
                 <option value={3}>Three</option>
               </select>
               <p>Late Fee Rule</p>
+              <div className="container">
+                <div className="row justify-content-center mt-5">
+                  <div className="col-6 text-center">
+                    <button
+                      type="button"
+                      className="btn btn-outline-info  text-info"
+                    >
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="col-md-9 mx-auto  shadow rounded-3">
-              <div className='p-2 mt-3'>
-                {/* <div className="row">
-                  <div className="col-md-6">
-                    <p style={{ whiteSpace: "nowrap" }} className="mx-1">
-                      Days rent is late:&nbsp;
-                    </p>
-                    <div className="input-group input-group-sm mb-3">
-                      <input
-                        type="text"
-                        className="form-control"
-                        aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-sm"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                  <label htmlFor=""></label>
-                    <select className="form-select form-select-sm text-info mx-1">
-                      <option selected="">Days</option>
-                      <option value={1}>One</option>
-                    </select>
-                  </div>
-                </div> */}
-                <div className="d-flex justify-content-between mb-1">
-                  <p style={{ whiteSpace: "nowrap" }} className="mx-1">
-                    Days rent is late:&nbsp;
-                  </p>
-                  <div className="input-group input-group-sm mb-3">
+            <div className="col-md-6 col-lg-5 col-sm-5">
+              <div className="row mb-3">
+                <div className="col-4">
+                  <p className="my-auto">Days rent is late:</p>
+                </div>
+                <div className="col-4">
+                  <div className="input-group input-group-sm">
                     <input
                       type="text"
                       className="form-control"
@@ -68,16 +56,20 @@ const Addpage = () => {
                       aria-describedby="inputGroup-sizing-sm"
                     />
                   </div>
-                  <select className="form-select form-select-sm text-info mx-1">
+                </div>
+                <div className="col-4">
+                  <select className="form-select form-select-sm text-info">
                     <option selected="">Days</option>
                     <option value={1}>One</option>
                   </select>
                 </div>
-                <div className="d-flex justify-content-between">
-                  <p style={{ whiteSpace: "nowrap" }} className="mx-1">
-                    Late Fee(1st time):
-                  </p>
-                  <div className="input-group input-group-sm mb-3">
+              </div>
+              <div className="row mb-3">
+                <div className="col-4">
+                  <p className="my-auto">Late Fee(1st time):</p>
+                </div>
+                <div className="col-4">
+                  <div className="input-group input-group-sm">
                     <input
                       type="text"
                       className="form-control"
@@ -85,16 +77,20 @@ const Addpage = () => {
                       aria-describedby="inputGroup-sizing-sm"
                     />
                   </div>
-                  <select className="form-select form-select-sm  text-info mx-1">
+                </div>
+                <div className="col-4">
+                  <select className="form-select form-select-sm text-info">
                     <option selected="">$</option>
                     <option value={1}>One</option>
                   </select>
                 </div>
-                <div className="d-flex justify-content-between">
-                  <p style={{ whiteSpace: "nowrap" }} className="mx-1">
-                    Late Fee(recurring):
-                  </p>
-                  <div className="input-group input-group-sm mb-3">
+              </div>
+              <div className="row mb-3">
+                <div className="col-4">
+                  <p className="my-auto">Late Fee(recurring):</p>
+                </div>
+                <div className="col-4">
+                  <div className="input-group input-group-sm">
                     <input
                       type="text"
                       className="form-control"
@@ -102,26 +98,34 @@ const Addpage = () => {
                       aria-describedby="inputGroup-sizing-sm"
                     />
                   </div>
-                  <select
-                    className="form-select form-select-sm  text-info mx-1"
-                    aria-label="Large select example"
-                  >
+                </div>
+                <div className="col-4">
+                  <select className="form-select form-select-sm text-info">
                     <option selected="">$</option>
                     <option value={1}>One</option>
                     <option value={2}>Two</option>
                     <option value={3}>Three</option>
                   </select>
                 </div>
-                <div className="d-flex justify-content-between">
-                  <p style={{ whiteSpace: "nowrap" }} className="mx-1">
-                    every:
-                  </p>
-                  <div className="input-group input-group-sm mx-1">
-                    {/* <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"> */}
+              </div>
+              <div className="row mb-3">
+                <div className="col-4">
+                  <p className="my-auto">every:</p>
+                </div>
+                <div className="col-4">
+                  <div className="input-group input-group-sm">
+                    <input
+                      type="number"
+                      className="form-control"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-sm"
+                    />
                   </div>
+                </div>
+                <div className="col-4">
                   <select
-                    className="form-select form-select-sm  text-info mx-1"
-                    aria-label="Large select example"
+                    className="form-select form-select-sm text-info"
+                    style={{ width: "100%" }}
                   >
                     <option selected="">Day</option>
                     <option value={1}>One</option>
@@ -129,11 +133,13 @@ const Addpage = () => {
                     <option value={3}>Three</option>
                   </select>
                 </div>
-                <div className="d-flex justify-content-between">
-                  <p style={{ whiteSpace: "nowrap" }} className="mx-1">
-                    Max Late Fee:
-                  </p>
-                  <div className="input-group input-group-sm mb-3">
+              </div>
+              <div className="row mb-3">
+                <div className="col-4">
+                  <p className="my-auto">Max Late Fee:</p>
+                </div>
+                <div className="col-4">
+                  <div className="input-group input-group-sm">
                     <input
                       type="text"
                       className="form-control"
@@ -141,21 +147,22 @@ const Addpage = () => {
                       aria-describedby="inputGroup-sizing-sm"
                     />
                   </div>
-                  <select
-                    className="form-select form-select-sm  text-info mx-1"
-                    aria-label="Large select example"
-                  >
+                </div>
+                <div className="col-4">
+                  <select className="form-select form-select-sm text-info">
                     <option selected="">%</option>
                     <option value={1}>One</option>
                     <option value={2}>Two</option>
                     <option value={3}>Three</option>
                   </select>
                 </div>
-                <div className="d-flex justify-content-between">
-                  <p style={{ whiteSpace: "nowrap" }} className="mx-1">
-                    Apply for:
-                  </p>
-                  <div className="input-group input-group-sm mb-3">
+              </div>
+              <div className="row mb-3">
+                <div className="col-4">
+                  <p className="my-auto">Apply for:</p>
+                </div>
+                <div className="col-4">
+                  <div className="input-group input-group-sm">
                     <input
                       type="text"
                       className="form-control"
@@ -163,21 +170,22 @@ const Addpage = () => {
                       aria-describedby="inputGroup-sizing-sm"
                     />
                   </div>
-                  <select
-                    className="form-select form-select-sm  text-info mx-1"
-                    aria-label="Large select example"
-                  >
+                </div>
+                <div className="col-4">
+                  <select className="form-select form-select-sm text-info">
                     <option selected="">Rental Income</option>
                     <option value={1}>One</option>
                     <option value={2}>Two</option>
                     <option value={3}>Three</option>
                   </select>
                 </div>
-                <div className="d-flex justify-content-between">
-                  <p style={{ whiteSpace: "nowrap" }} className="mx-1">
-                    Save as:
-                  </p>
-                  <div className="input-group input-group-sm mb-3">
+              </div>
+              <div className="row mb-3">
+                <div className="col-4">
+                  <p className="my-auto">Save as:</p>
+                </div>
+                <div className="col-4">
+                  <div className="input-group input-group-sm">
                     <input
                       type="text"
                       className="form-control"
@@ -185,80 +193,70 @@ const Addpage = () => {
                       aria-describedby="inputGroup-sizing-sm"
                     />
                   </div>
-                  <select
-                    className="form-select form-select-sm text-info mx-1 "
-                    aria-label="Large select example"
-                  >
+                </div>
+                <div className="col-4">
+                  <select className="form-select form-select-sm text-info">
                     <option selected="">Add to existing</option>
                     <option value={1}>One</option>
                     <option value={2}>Two</option>
                     <option value={3}>Three</option>
                   </select>
                 </div>
-                <div>
-                  <p>Summary for all properties (all units)</p>
-                  <p>
-                    First late free 10 dollar amount will be applied 5 days after rent
-                    is due.
-                  </p>
-                  <p>
-                    After that, an additional 5 dollar amount will be applied each
-                    following day.
-                  </p>
-                  <div className="input-group input-group-sm mb-3">
-                    <p>Sample charge amount:- &nbsp;</p>
-                    <input
-                      type="text"
-                      className="form-control"
-                      aria-label="Sizing example input"
-                      aria-describedby="inputGroup-sizing-sm"
-                    />
-                  </div>
-                </div>
-                &gt;
-                <table className="table">
-                  <thead>
-                    <tr>
-                      <td scope="col" style={{ whiteSpace: "nowrap" }}>
-                        Days Late
-                      </td>
-                      <td scope="col" style={{ whiteSpace: "nowrap" }}>
-                        Late Fee Applied This Day
-                      </td>
-                      <td scope="col" style={{ whiteSpace: "nowrap" }}>
-                        Total Late Fee
-                      </td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">0</th>
-                      <td>-</td>
-                      <td>-</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>-</td>
-                      <td>-</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>-</td>
-                      <td>-</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>$100</td>
-                      <td>$50</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>$70</td>
-                      <td>$20</td>
-                    </tr>
-                  </tbody>
-                </table>
               </div>
+              <div>
+                <p>Summary for all properties (all units)</p>
+                <p>First late fee: $10 will be applied 5 days after rent is due.</p>
+                <p>
+                  After that, an additional $5 will be applied each following day.
+                </p>
+                <div className="input-group input-group-sm mb-3">
+                  <div className="input-group-prepend">
+                    <span className="input-group-text">Sample charge amount:</span>
+                  </div>
+                  <input
+                    type="text"
+                    className="form-control"
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm"
+                  />
+                </div>
+              </div>
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Days Late</th>
+                    <th scope="col">Late Fee Applied This Day</th>
+                    <th scope="col">Total Late Fee</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>$100</td>
+                    <td>$50</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>$70</td>
+                    <td>$20</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

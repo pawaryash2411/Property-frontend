@@ -125,26 +125,26 @@ const ViewAllRenters = () => {
                 data-bs-target="#exampleModal"
               >
                 {" "}
-                <i className="fa-solid fa-plus"></i> Add
+                <i className="fa-solid fa-plus fs-5" style={{ color: "#74C0FC" }}></i> Add
               </button>
               <button
                 type="button"
                 className="btn btn-white shadow  me-2  mt-2 "
               >
-                <i className="fa-sharp fa-solid fa-coins me-1 "></i> Show
+                <i className="fa-sharp fa-solid fa-coins fs-5 me-1 " style={{ color: "#74C0FC" }}></i> Show
                 Balance Due
               </button>
               <button
                 type="button"
                 className="btn btn-white shadow  me-2 mt-2 "
               >
-                <i className="fa-sharp fa-solid fa-file me-1 "></i>Export Data
+                <i className="fa-sharp fa-solid fa-file fs-5 me-1 " style={{ color: "#74C0FC" }}></i>Export Data
               </button>
               <button
                 type="button"
                 className="btn btn-white shadow  me-2 mt-2 "
               >
-                <i className="fa-solid fa-ban me-1"></i>Clear All Filters
+                <i className="fa-solid fa-ban me-1 fs-5" style={{ color: "#74C0FC" }}></i>Clear All Filters
               </button>
             </div>
           </div>

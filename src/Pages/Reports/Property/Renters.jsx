@@ -74,7 +74,7 @@ const Renters = () => {
                 </div>
               </div>
             </div>
-          
+
           </div>
         </div>
       </div>
@@ -96,7 +96,7 @@ const Renters = () => {
           <div className="col-md-2 mb-2 ">
             <div className="bg-secondary bg-opacity-50 py-2 rounded text-center shadow text-light ">
               <h5 className="p-0 m-0"> Moving In </h5>
-              <p className="p-0 m-0"  style={{ fontSize: "14px" }} >0 Lease Starting </p>
+              <p className="p-0 m-0" style={{ fontSize: "14px" }} >0 Lease Starting </p>
             </div>
           </div>
           <div className="col-md-2 mb-2">
@@ -140,17 +140,22 @@ const Renters = () => {
                 data-bs-target="#exampleModal"
               >
                 {" "}
-                <i className="fa-solid fa-plus"></i> Add
+                <i className="fa-solid fa-plus fs-5 me-1" style={{ color: "#74C0FC" }}></i>
+
+                Add
               </button>
               <button type="button" className="btn btn-white shadow  me-2  ">
-                <i className="fa-sharp fa-solid fa-coins me-1 "></i> Show
+                <i className="fa-sharp fa-solid fa-coins fs-5 me-1" style={{ color: "#74C0FC" }}></i>
+                Show
                 Balance Due
               </button>
               <button type="button" className="btn btn-white shadow  me-2">
-                <i className="fa-sharp fa-solid fa-file me-1 "></i>Export Data
+                <i class="fa-regular fa-file fs-5 me-1" style={{ color: "#74C0FC" }}></i>
+                Export Data
               </button>
               <button type="button" className="btn btn-white shadow  me-2">
-                <i className="fa-solid fa-ban me-1"></i>Clear All Filters
+                <i className="fa-solid fa-ban fs-5 me-1" style={{ color: "#74C0FC", fontWeight: "500" }}></i>
+                Clear All Filters
               </button>
             </div>
           </div>

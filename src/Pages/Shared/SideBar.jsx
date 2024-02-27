@@ -271,13 +271,7 @@ export function SideBar() {
                   >  Create Request
                   </Link>
                 </ListItem>
-                <ListItem className="hover:text-cyan-500 py-2 font-semibold">
-                  <Link
-                    to={"Viewallrenters"}
-                    className="link-underline link-underline-opacity-0 text-dark">
-                    View all request
-                  </Link>
-                </ListItem>
+               
               </List>
             </AccordionBody>
           </Accordion>

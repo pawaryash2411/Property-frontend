@@ -439,7 +439,7 @@ const Property = () => {
           <div className="col-md-2 mb-2">
             <div className="bg-info py-2 rounded  text-center  shadow  text-light ">
               <h6 className="p-0 m-0">5</h6>
-              <p className="p-0 m-0"  style={{fontSize:"14px"}} >
+              <p className="p-0 m-0" style={{ fontSize: "14px" }} >
                 {" "}
                 <b>$5,289 per month</b>
               </p>
@@ -448,19 +448,19 @@ const Property = () => {
           <div className="col-md-2 mb-2 ">
             <div className="bg-secondary bg-opacity-50 py-2 rounded text-center shadow text-light ">
               <h6 className="p-0 m-0">0 Occupied</h6>
-              <p className="p-0 m-0" style={{fontSize:"14px"}}>$0 per month</p>
+              <p className="p-0 m-0" style={{ fontSize: "14px" }}>$0 per month</p>
             </div>
           </div>
           <div className="col-md-2 mb-2 ">
             <div className="bg-secondary bg-opacity-50 py-2 rounded text-center shadow text-light ">
               <h6 className="p-0 m-0">0 Expiring  90 Days</h6>
-              <p className="p-0 m-0"style={{fontSize:"14px"}}>$0 per month</p>
+              <p className="p-0 m-0" style={{ fontSize: "14px" }}>$0 per month</p>
             </div>
           </div>
           <div className="col-md-2 mb-2 ">
             <div className="bg-secondary bg-opacity-50 py-2 rounded text-center shadow text-light ">
               <h6 className="p-0 m-0">5 Vacant</h6>
-              <p className="p-0 m-0"style={{fontSize:"14px"}}>$5,289.00 per month</p>
+              <p className="p-0 m-0" style={{ fontSize: "14px" }}>$5,289.00 per month</p>
             </div>
           </div>
           <div className="col-md-2 mb-2 mt-2 ">
@@ -469,7 +469,7 @@ const Property = () => {
                 className="p-0 m-0"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModaltable"
-                style={{fontSize:"14px"}}
+                style={{ fontSize: "14px" }}
               >
                 View Properties
               </h6>
@@ -482,7 +482,7 @@ const Property = () => {
                 className="p-0 m-0"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
-                style={{fontSize:"14px"}}
+                style={{ fontSize: "14px" }}
               >
                 Add
               </h6>
@@ -579,21 +579,24 @@ const Property = () => {
                 type="button"
                 className="btn btn-white shadow  me-2  mt-2 "
               >
-                <i className="fa-sharp fa-solid fa-coins me-1 "></i> Hide
-                Balance Due
+
+                <i class="fa-regular fa-database me-1 fs-5" style={{ color: "#74C0FC" }}></i>
+                Hide Balance Due
               </button>
 
               <button
                 type="button"
                 className="btn btn-white shadow  me-2 mt-2 "
               >
-                <i className="fa-sharp fa-solid fa-file me-1 "></i>Export Data
+                <i class="fa-regular fa-file fs-5 me-1" style={{ color: "#74C0FC" }}></i>
+                Export Data
               </button>
               <button
                 type="button"
                 className="btn btn-white shadow  me-2 mt-2 "
               >
-                <i className="fa-solid fa-ban me-1"></i>Clear All Filters
+                <i className="fa-solid fa-ban fs-5 me-1" style={{ color: "#74C0FC", fontWeight:"500" }}></i>
+                Clear All Filters
               </button>
             </div>
           </div>
